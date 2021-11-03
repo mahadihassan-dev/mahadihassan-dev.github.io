@@ -1,0 +1,1148 @@
+/* 
+    Theme Name: My Portfolio
+    Theme Version: V0
+    Desgined and Developed by Mahadi Hassan
+    
+    Made with ❤ If you're Thinking to Copy Please don't
+    
+    Before you do it Look at Yourself Who you are!!!
+
+*/
+
+
+/* 
+    Fonts Imported
+    1. Roboto Mono
+    2. Ubuntu Mono
+    3. IBM Plex Mono
+*/
+
+
+/*
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Font Awesome 5 Free';
+    font-family: 'Font Awesome 5 Pro';
+*/
+
+
+/* Fonts Import */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* CSS Varriables */
+
+:root {
+    --font-color: #000;
+    --transition-time: all .5s cubic-bezier(0.47, 0, 0.75, 0.72);
+}
+
+.root_font {
+    font-family: 'IBM Plex Mono';
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* Reset CSS */
+
+* {
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    position: relative;
+}
+
+.clr {
+    clear: both;
+}
+
+.section-title {
+    font-family: 'Ubuntu Mono';
+    position: relative;
+}
+
+.section-title::before {
+    position: absolute;
+    content: "";
+    top: -15px;
+    left: -20px;
+    width: 80px;
+    height: 40px;
+    background: red;
+    z-index: -1;
+    opacity: .2;
+}
+
+.section-title::after {
+    position: absolute;
+    content: '';
+    top: 25px;
+    left: 265px;
+    width: 50px;
+    height: 3px;
+    background: #000033;
+}
+
+
+/* Whatsapp Chat Start */
+
+.whatsapp_chat {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 999;
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.whatsapp_chat i {
+    font-size: 62px;
+    color: #25D366;
+}
+
+a.skype_chat {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    z-index: 999;
+}
+
+.skype_chat i {
+    font-size: 62px;
+    color: #00aff0;
+}
+
+
+/* Whatsapp Chat End */
+
+
+/* Site Float Navigation Start */
+
+.site-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    background: #f2f3f4;
+    width: 600px;
+    height: 45px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px -5px rgb(0 0 0 / 20%);
+}
+
+.site-nav ul li {
+    display: inline-block;
+}
+
+
+/* Site Float Navigation End  */
+
+
+/* profile section Start */
+
+h3.job-title,
+h4.service-text,
+h2.welcome {
+    margin-top: 15px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+span.greeting::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 69px;
+    height: 14px;
+    background: #ff00003d;
+    z-index: -1;
+}
+
+span.greeting {
+    font-size: 26px;
+    font-family: 'IBM Plex Mono';
+    position: relative;
+}
+
+.profile-picture {
+    position: relative;
+}
+
+.profile-picture::after {
+    position: absolute;
+    content: '';
+    bottom: 40px;
+    right: 49px;
+    width: 55px;
+    height: 55px;
+    background-color: #6FDA44;
+    border: 10px solid #fff;
+    border-radius: 50%;
+}
+
+.profile-picture img {
+    box-shadow: 0px 0px 60px 15px rgb(0 0 0 / 7%);
+    border-radius: 50%;
+}
+
+.intro-btn ul li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.intro-btn ul li a {
+    display: block;
+    width: 175px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background: #111;
+    font-family: 'Ubuntu Mono';
+    font-size: 22px;
+    color: #fff;
+    border-radius: 10px;
+    transition: all linear .5s;
+}
+
+.intro-btn ul li a:hover {
+    background: #fff;
+    color: #111;
+    box-shadow: 5px 5px 1px 1px #111;
+}
+
+.my-info {
+    width: 100%;
+    padding: 60px 15px;
+}
+
+
+/* profile section End */
+
+
+/* About Section Start */
+
+.about_me_title::after {
+    left: 145px;
+}
+
+p.about_text {
+    font-family: 'IBM Plex Mono';
+    text-align: justify;
+}
+
+span.about_grettings {
+    display: block;
+    font-size: 22px;
+    font-family: 'IBM Plex Mono';
+}
+
+
+/* About Section End */
+
+
+/* projects Section Start */
+
+.projet-title::after {
+    left: 345px;
+}
+
+.projects-more {
+    text-align: center;
+}
+
+.projects-more a.more-projects {
+    text-align: center;
+    background: #858585;
+    width: 235px;
+    height: 60px;
+    display: block;
+    margin: auto;
+    line-height: 60px;
+    color: #fff;
+    border-radius: 50px;
+    font-family: 'Ubuntu Mono';
+    font-size: 22px;
+    position: relative;
+    box-shadow: 0px 5px 0px 0px #111;
+    transition: all cubic-bezier(0.47, 0, 0.75, 0.72) 1s;
+}
+
+.projects-more a.more-projects::after {
+    position: absolute;
+    content: '\f35d';
+    top: 0;
+    right: 25px;
+    font-family: 'Font Awesome 5 Pro';
+    font-size: 14px;
+}
+
+a.more-projects:hover {
+    box-shadow: 0px 0px 10px 3px #111 inset;
+    transition: all cubic-bezier(0.47, 0, 0.75, 0.72) 1s;
+}
+
+
+/* projects Section End */
+
+
+/* My Skill Section Start */
+
+.mySkill-title::after {
+    left: 135px;
+}
+
+.skill-details {
+    margin-top: 15px;
+}
+
+.mySkill-col {
+    width: 251px;
+    background: #eaeaea47;
+    margin: auto;
+    padding: 25px 0px;
+    border-radius: 10px;
+    border: .5px solid rgb(0 0 0 / 8%);
+    transition: all cubic-bezier(0.4, 0, 1, 1) .2s;
+    box-shadow: 0px 5px 2px 0px rgb(0 0 0 / 19%);
+}
+
+.mySkill-col:hover {
+    transform: translate(0px, 5px);
+    box-shadow: 0px 1px 2px 0px rgb(0 0 0 / 19%);
+}
+
+.sk-icon img {
+    width: 45px;
+}
+
+.sk-icon {
+    width: 90px;
+    height: 90px;
+    display: block;
+    margin: auto;
+    background: #f3e9e9;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 67px;
+    border: 10px solid #5977da;
+}
+
+.sk-title {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 26px;
+}
+
+
+/* My Skill Section End */
+
+
+/* Service Section Start */
+
+.my-service-title::after {
+    left: 185px;
+}
+
+.service-container,
+.service-row {
+    margin-top: 100px;
+}
+
+.my-service {
+    background: #f2f2f2;
+    width: 265px;
+    margin: auto;
+    position: relative;
+    height: 555px;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0px 0px 12px -1px rgb(0 0 0 / 9%);
+    border: 1px solid rgb(51 51 51 / 2%);
+    font-family: 'IBM Plex Mono';
+    transition: all linear .3s;
+}
+
+.my-service-list {
+    padding: 0px 30px;
+}
+
+.my-service:hover {
+    transform: translate(0px, -8px);
+    box-shadow: 0px 0px 20px -5px rgb(28 101 255 / 39%);
+}
+
+.service-icon {
+    width: 125px;
+    height: 125px;
+    margin: auto;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    border: 15px solid rgb(42 112 240 / 50%);
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 1px 0px 15px #fff;
+    line-height: 64px;
+}
+
+.service-title {
+    padding: 75px 0px 30px 0px;
+    font-size: 22px;
+}
+
+.my_service_list_item {
+    font-size: 13px;
+}
+
+
+/* Service Section End */
+
+
+/* Product Card Image Slider */
+
+h2.section-title.service-card-title::after {
+    left: 235px;
+}
+
+section#product {
+    margin-top: 73px !important;
+}
+
+.row.product-slide {
+    position: relative;
+}
+
+.row.product-slide::after {
+    position: absolute;
+    content: '';
+    top: -45px;
+    left: 0;
+    width: 100%;
+    height: 275px;
+    background: #f2f2f273;
+    z-index: -1;
+    border-radius: 30px;
+}
+
+.product-card {
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.best-sell {
+    position: relative;
+}
+
+.best-sell::after {
+    position: absolute;
+    content: '';
+    background: url(../images/best-seller.png);
+    background-repeat: no-repeat;
+    top: 5px;
+    left: 5px;
+    width: 45px;
+    height: 45px;
+    background-size: cover;
+}
+
+.product-details {
+    padding: 15px 20px;
+}
+
+.product-image-slide {
+    overflow: hidden;
+}
+
+.product-image.slick-slide img {
+    margin: auto;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all linear .3s;
+}
+
+.product-image-slide.slick-initialized.slick-slider {
+    position: relative;
+}
+
+.product-image-slide-nxt-arrow.slick-arrow,
+.product-image-slide-prev-arrow.slick-arrow {
+    position: absolute;
+    top: 90px;
+    font-size: 26px;
+    transition: all linear .3s;
+    cursor: pointer;
+}
+
+.product-image-slide-prev-arrow.slick-arrow {
+    left: -27px;
+    z-index: 1;
+}
+
+.product-image-slide-nxt-arrow.slick-arrow {
+    right: -27px;
+}
+
+.product-image-slide:hover>.product-image-slide-prev-arrow.slick-arrow {
+    left: 15px;
+}
+
+.product-image-slide:hover>.product-image-slide-nxt-arrow.slick-arrow {
+    right: 15px;
+}
+
+.p-usr-info ul li {
+    display: inline-block;
+}
+
+a.product-title {
+    display: block;
+    font-size: 26px;
+    color: #111;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+span.product-ratings {
+    margin-top: 10px;
+    display: block;
+}
+
+
+/* a.product-btns {
+    width: 150px;
+    height: 40px;
+    display: block;
+    background: rebeccapurple;
+    text-align: center;
+    line-height: 40px;
+    margin: auto;
+} */
+
+a.product-btns {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 !important;
+    font-family: monospace;
+    font-size: 18px;
+    transition: all linear .5s !important;
+}
+
+.product-btns:hover {
+    background: #1458e4 !important;
+}
+
+.product-button a {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.product-button {
+    text-align: center;
+}
+
+h3.product-price {
+    display: block;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+span.pdct-rate-number {
+    font-size: 14px;
+    font-family: monospace;
+    font-weight: 400;
+}
+
+span.product-ratings ul li i {
+    color: #FDCC0D;
+}
+
+li.p-user a.p-user-name {
+    display: block;
+    font-family: monospace;
+    font-size: 17px;
+    font-weight: 400;
+    color: #111111;
+    margin-left: 5px;
+}
+
+.p-usr-info ul {
+    margin-bottom: 3px;
+}
+
+
+/* Marketplace Logo Section Start */
+
+a.mktp-logo {
+    display: block;
+    margin: auto;
+    width: 195px;
+}
+
+.market-place-main {
+    padding: 20px 0;
+    margin: 60px 0;
+}
+
+h2.section-title.markt-place::after {
+    left: 410px;
+}
+
+.market-place-logo-row {
+    padding: 30px 0;
+    margin: 20px 0;
+}
+
+
+/* Marketplace Logo Section End */
+
+
+/* Clients Review Start */
+
+.client_reviewTitle::after {
+    left: 430px;
+}
+
+.client_video_review {
+    position: relative;
+}
+
+.client_videoPlayback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: block;
+    transition: all linear .3s;
+}
+
+.client_videoPlayback:hover {
+    background: rgba(0, 0, 0, .5);
+}
+
+.video_playButton {
+    margin: 134px 0px;
+    display: block;
+}
+
+.video_playButton i {
+    font-size: 36px;
+    color: #FF0000;
+}
+
+.clients_info {
+    margin-top: 50 px;
+}
+
+
+/* Clients Review End */
+
+
+/* Testimonial Section Start */
+
+.upwork_reviewTitle::after {
+    left: 400px;
+}
+
+.testimonial-main {
+    margin: 60px 0;
+}
+
+.testimonial-body {
+    background: url(../images/teztimonial-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+}
+
+.testimonial-container {
+    background: #1D4354;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+    color: #fff;
+}
+
+.testimonial-container::after {
+    position: absolute;
+    content: url(../images/shape.png);
+    bottom: -33px;
+    left: 35px;
+    z-index: 1;
+}
+
+.tst-ft-img {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+span.testimonial-service-rating ul li {
+    display: inline-block;
+    color: #6FDA44;
+    font-size: 24px;
+}
+
+h3.testimonial-project-title {
+    font-weight: 400;
+}
+
+h2.testimonial-message {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2.testimonial-message a {
+    color: #fff;
+    font-size: 19px;
+}
+
+
+/* Testimonial Section End */
+
+
+/* Contact Me Section Start */
+
+a.contact-email ul li {
+    display: inline-block;
+}
+
+
+/* .ce-image {
+    width: 70px;
+    height: 70px;
+} */
+
+li.ce-image i {
+    font-size: 42px;
+    color: #111;
+    transition: all .5s cubic-bezier(0.47, 0, 0.75, 0.72);
+}
+
+.contact-email:hover>ul li.ce-image i {
+    color: #fff;
+}
+
+a.contact-email {
+    background: #fff;
+    display: block;
+    height: 90px;
+    line-height: 80px;
+    padding: 0px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px -7px rgb(0 0 0 / 13%);
+    transition: all .5s cubic-bezier(0.47, 0, 0.75, 0.72);
+    text-decoration: none !important;
+}
+
+a.contact-email:hover {
+    background: #1458e4;
+    color: #fff;
+    transform: translate(2px, -5px);
+    box-shadow: 5px -5px 62px -20px rgb(0 123 255 / 50%);
+}
+
+li.ce-title h2 {
+    margin-left: 30px;
+    font-family: 'IBM Plex Mono';
+    color: #111;
+    font-size: 36px;
+    transition: var(--transition-time);
+}
+
+.contact-email:hover>ul li.ce-title h2 {
+    color: #fff;
+}
+
+.project_discuss {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 32px;
+}
+
+
+/* Contact Me Section End */
+
+
+/* Employment History Start */
+
+.employment_Title::after {
+    left: 300px;
+}
+
+.eh_card_content {
+    margin-left: 50px;
+}
+
+.eh_time {
+    font-family: 'Roboto Mono', monospace;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+    color: #767676;
+}
+
+.eh_job_title {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.eh_company_name {
+    font-family: 'Ubuntu Mono';
+    font-size: 26px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.eh_job_description {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.employment_history_card::before {
+    position: absolute;
+    bottom: 45px;
+    left: 45px;
+    content: '';
+    height: 190px;
+    width: 1px;
+    background: #000;
+}
+
+.employment_history_card::after {
+    position: absolute;
+    content: '\f0b1';
+    top: 25px;
+    left: 35px;
+    font-family: 'Font Awesome 5 Pro';
+    font-size: 22px;
+}
+
+.employment_history_card {
+    position: relative;
+    padding: 20px 20px;
+}
+
+
+/* Employment History End */
+
+
+/* Courses and Certifications section Start */
+
+.certificate_Title::after {
+    left: 670px;
+}
+
+.certicate_duration_and_issue_date {
+    font-family: 'Roboto Mono';
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    color: #767676;
+}
+
+.course_name {
+    font-family: 'Roboto Mono';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.course_institue {
+    font-family: 'Ubuntu Mono';
+    font-size: 22px;
+    font-style: inherit;
+    font-weight: 500;
+}
+
+.gotTrain_from {
+    font-family: 'IBM Plex Mono';
+    font-style: italic;
+    font-size: 14px;
+    color: #5c5c5c;
+}
+
+.course_institue i {
+    font-size: 18px;
+}
+
+.certicate_card {
+    position: relative;
+    padding: 20px 20px;
+}
+
+.course_details {
+    font-family: 'Ubuntu Mono';
+    font-size: 18px;
+    text-align: justify;
+}
+
+.certificate_content {
+    margin-left: 30px;
+    position: relative;
+}
+
+.certificate_content::after {
+    position: absolute;
+    content: '\f5ea';
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    font-family: 'Font Awesome 5 Pro';
+}
+
+.certicate_card::after {
+    position: absolute;
+    content: '\f501';
+    font-family: 'Font Awesome 5 Pro';
+    top: 22px;
+    left: 14px;
+    font-size: 26px;
+}
+
+.certicate_card::before {
+    display: none;
+}
+
+
+/* .certicate_card::before {
+    position: absolute;
+    content: '';
+    bottom: 36px;
+    left: 25px;
+    width: 1px;
+    height: 215px;
+    background: #000;
+} */
+
+
+/* Courses and Certifications section End */
+
+a.test-btn:hover::after {
+    width: 170px;
+    border-radius: 50px;
+}
+
+.test-btn:hover>.chat_button_text {
+    display: block;
+}
+
+.chat_button_text {
+    display: none;
+    transition: all linear .5s;
+}
+
+a.test-btn::after {
+    position: absolute;
+    content: '';
+    background: #ff4f55;
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: all linear .5s;
+    z-index: -1;
+}
+
+a.test-btn:hover {
+    width: 190px;
+    border-radius: 50px;
+}
+
+a.test-btn {
+    display: block;
+    background: #1458e4;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    color: #fff;
+    text-decoration: none;
+    transition: all linear .5s;
+    position: relative;
+    z-index: 1;
+}
+
+a.test-btn span {
+    z-index: 999;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+a.test-btn:hover>span {
+    color: #fff;
+}
+
+
+/* Menu Start */
+
+.main_nav {
+    position: fixed;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    left: 50%;
+}
+
+.menu {
+    padding: 2rem;
+    background-color: #fff;
+    position: relative;
+    width: calc(200px + 4 * 70px + 4rem);
+    display: flex;
+    justify-content: center;
+    border-radius: 20px 20px;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.075);
+}
+
+.link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 50px;
+    border-radius: 99em;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transform-origin: center left;
+    transition: width 0.2s ease-in;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+}
+
+.link:before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    display: block;
+    border-radius: 99em;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: translateX(100%);
+    transition: transform 0.2s ease-in;
+    transform-origin: center right;
+    background-color: #eee;
+}
+
+.link:hover,
+.link:focus {
+    outline: 0;
+    width: 220px;
+    text-decoration: none;
+}
+
+.link:hover:before,
+.link:hover .link-title,
+.link:focus:before,
+.link:focus .link-title {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.link-icon {
+    width: 28px;
+    height: 28px;
+    display: block;
+    flex-shrink: 0;
+    left: 18px;
+    position: absolute;
+}
+
+.link-icon svg {
+    width: 28px;
+    height: 28px;
+}
+
+.link-title {
+    transform: translateX(100%);
+    transition: transform 0.2s ease-in;
+    transform-origin: center right;
+    display: block;
+    text-align: center;
+    text-indent: 28px;
+    width: 100%;
+    color: #000;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 16px;
+}
+
+
+/* Site Main Menu Start Here */
+
+
+/* Footer Section Start */
+
+.footer_wrapper {
+    margin-bottom: 125px;
+}
+
+.footer_socialmedia {
+    text-align: right;
+}
+
+.socialmedida_items {
+    display: inline-block;
+}
+
+.socialmedia_item i {
+    font-size: 26px;
+}
+
+.facebook {
+    color: #3b5998;
+}
+
+.linkedin {
+    color: #0077b5;
+}
+
+.dribbble {
+    color: #ea4c89;
+}
+
+.behance {
+    color: #053eff;
+}
+
+
+/* Footer Section End */

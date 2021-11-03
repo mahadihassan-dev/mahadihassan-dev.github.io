@@ -5,118 +5,873 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahadi Hassan | Web Designer and Developer</title>
-    <link rel="shortcut icon" href="fav-icon.png" type="image/x-icon">
-    <meta name="description" content="mahadi hassan; web developer; Wordpress developer; laraverl developer; Professional Web developer; PHP web developer; javasctipt developer">
-    <meta name="google-site-verification" content="bTPh4couR1K_TO_ZajFF5RAjzNx-dSoc_IMW9vLZ3uc" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap" rel="stylesheet">
-    <style>
-        @font-face {
-            font-family: 'signature-font';
-            src: url(./Maillove.otf);
-        }
-        
-        body {
-            font-family: 'Ubuntu Mono', monospace !important;
-        }
-        
-        a.chat-with-me {
-            display: block;
-            margin: auto;
-            height: 80px;
-            width: 80px;
-            margin-top: 25px;
-        }
-        
-        a.my-projects {
-            font-size: 22px;
-            display: block;
-            color: #111111;
-            margin-top: 20px;
-            position: relative;
-        }
-        
-        a.my-projects::after {
-            position: absolute;
-            content: '\f35d';
-            font-family: 'Font Awesome 5 Pro';
-            font-size: 16px;
-            top: 5px;
-            right: 435px;
-        }
-        
-        .my-sign {
-            font-family: 'signature-font';
-            margin-top: 65px;
-            transform: rotate( 353deg);
-        }
-    </style>
+    <!-- Site Title -->
+    <title>Mahadi Hassan | Full Stack Web Developer</title>
+    <!-- Site Icon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!-- Theme Core -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Theme Core Responsive -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Bootstrap v4.6 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" />
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+    <!-- Veno Box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.3/venobox.min.css" />
+    <!-- AnimateCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
+    <!-- FlatIcon -->
+    <link rel="stylesheet" href="assets/font/flaticon.css">
+    <!-- UI Icons -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 </head>
 
 <body>
-    <div class="container text-center py-5">
-        <h2>Thanks for Visitng and Interest for me</h2>
-        <h1>We are working to do amazing.</h1>
-        😊
-        <h1>Want to talk with me?</h1>
-        <a href="https://api.whatsapp.com/send?phone=+8801308310494&text=Hello" class="chat-with-me">
-            <img src="whatsapp.png" alt="" class="img-fluid">
-        </a>
-        <a href="https://projects-directory.netlify.app/" target="_blank" class="my-projects">See more Projects</a>
+    <!-- Whatsapp Chat Start -->
+    <a href="https://api.whatsapp.com/send?phone=+8801308310494&text=Hello" class="whatsapp_chat" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- Whatsapp Chat End -->
 
-        <a href="Mahadi Hassan-CV.pdf" class="btn btn-primary btn-lg mt-2">Download CV <i class="fas fa-cloud-download-alt"></i> </a>
-
-        <h1 class="my-sign">MahadiHassan</h1>
-        <form action="https://submit-form.com/mlwvMoVH">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Name" required="" />
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Email" required="" />
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Message" required=""></textarea>
-            <button type="submit">Send</button>
-        </form>
-
+    <!-- Skype Chat Start -->
+    <a href="https://join.skype.com/invite/W3eifMgfZOfh" class="skype_chat" target="_blank">
+        <i class="fab fa-skype"></i>
+    </a>
+    <!-- Skype Chat End -->
+    <!-- partial:index.partial.html -->
+    <div class="main_nav">
+        <div class="menu">
+            <!-- Home Nav Item -->
+            <a href="index.html" class="link">
+                <span class="link-icon">
+                <!-- Home icon -->
+                <i class="fi fi-rr-home"></i>
+                <!-- /icon -->
+            </span>
+                <span class="link-title">Home</span>
+            </a>
+            <!-- About Profile Nav Item -->
+            <a href="#about_me" class="link">
+                <span class="link-icon">
+                    <!-- icon -->
+                    <i class="fi fi-rr-mode-portrait"></i>
+                    <!-- /icon -->
+                </span>
+                <span class="link-title">About Me</span>
+            </a>
+            <!-- Projects Nav Item -->
+            <a href="#projects" class="link">
+                <span class="link-icon">
+                    <!-- icon -->
+                    <i class="fas fa-tasks"></i>
+                    <!-- /icon -->
+                </span>
+                <span class="link-title">Projects</span>
+            </a>
+            <!-- Skill Nav Item -->
+            <a href="#mySkill" class="link">
+                <span class="link-icon">
+                    <!-- icon -->
+                    <i class="fal fa-gem"></i>
+                    <!-- /icon -->
+                </span>
+                <span class="link-title">Skill</span>
+            </a>
+            <!-- Service Nav Item -->
+            <a href="#service" class="link">
+                <span class="link-icon">
+                    <!-- icon -->
+                    <i class="fal fa-file-certificate"></i>
+                    <!-- /icon -->
+                </span>
+                <span class="link-title">Service</span>
+            </a>
+            <!-- Testimonial Nav Item -->
+            <a href="#client_review" class="link">
+                <span class="link-icon">
+                <!-- icon -->
+                <i class="fi fi-rr-comment-user"></i>
+                <!-- /icon -->
+            </span>
+                <span class="link-title">Testimonial</span>
+            </a>
+            <!-- Experience Nav Item -->
+            <a href="#employment_history" class="link">
+                <span class="link-icon">
+                <!-- icon -->
+                <i class="fal fa-briefcase"></i>
+                <!-- /icon -->
+            </span>
+                <span class="link-title">Experience</span>
+            </a>
+            <!-- CV Nav Item -->
+            <a href="assets/cv/Mahadi Hassan- CV.pdf" class="link" download="assets/cv/Mahadi Hassan- CV.pdf">
+                <span class="link-icon">
+                <!-- icon -->
+                <i class="fi fi-rr-download"></i>
+                <!-- /icon -->
+            </span>
+                <span class="link-title">Download CV</span>
+            </a>
+        </div>
     </div>
+    <!-- ./partial -->
+    <!-- Introduction Section Start -->
+    <section id="my-intro" class="my-5">
+        <div class="myintro-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <!-- ./My Profile -->
+                        <div class="profile-picture">
+                            <img src="./assets/images/pro-pic-round.png" alt="mahadi hassan; Mahadi Hassan; Mahedi Hassan;" class="img-fluid">
+                        </div>
+                    </div>
+                    <!-- ./My Information -->
+                    <div class="col-md-7">
+                        <div class="my-info">
+                            <div class="my-info-title">
+                                <span class="greeting">Hi..</span>
+                                <h2 class="welcome">I'm Mahadi Hassan</h2>
+                                <h3 class="job-title">I'm <span class="my-services"></span></h3>
+                            </div>
+                            <div class="intro-btn mt-5">
+                                <ul>
+                                    <li><a href="https://join.skype.com/invite/W3eifMgfZOfh" target="_blank" class="banner-btn contact-btn">Contact</a></li>
+                                    <li><a href="./assets/cv/Mahadi Hassan- CV.pdf" class="banner-btn downloadcv-btn" download="./assets/cv/Mahadi Hassan- CV.pdf">Download CV </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Introduction Section End -->
+    <!-- About Me Section Start  -->
+    <section id="about_me" class="about__me">
+        <div class="about___me_wrapper">
+            <div class="container">
+                <!-- ./section title -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="section-title about_me_title">Who I am </h2>
+                    </div>
+                </div>
+                <!-- About Description -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="about_description">
+                            <p class="about_text">
+                                <span class="about_grettings">Hi,</span> I'm Mahadi working as Full Stack Developer as a Full Time Freelancer. I have 5 years Experience in this Industry. I have worked on Government Project under ICT Division of Bangladesh
+                                on LEDP(Learning and Earning Development Project) Project. This Project was launched to train Students Web Designing and Development. Here my role was to train Web Design and Development. Not only LEDP I have also worked
+                                many Local Companies in Bangaldesh. Those Company I was servied as Full Time Full Stack Developer. During this Time I have developed many web Applications with WordPress, Laravel, NodeJs. I have Developed those Application
+                                from scratch to live in the Inertnet. I have also worked as Full Time Developer in Webezy in UK.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Me Section End  -->
+    <!-- Projects Section Start -->
+    <section id="projects" class="mt-5">
+        <div class="all-projects">
+            <div class="container">
+                <!-- Projects Section title -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="section-title projet-title">Projects I have Done</h2>
+                    </div>
+                </div>
+                <!-- Projects Gallery -->
+                <div class="row mt-5">
+                    <!-- Gallery - 01  -->
+                    <div class="col-md-4">
+                        <div class="product-gallery-image">
+                            <a class="venobox" data-gall="gallery01" href="./assets/images/project-1.png">
+                                <img src="./assets/images/project-1.png" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Gallery - 02  -->
+                    <div class="col-md-4">
+                        <div class="product-gallery-image">
+                            <a class="venobox" data-gall="gallery01" href="./assets/images/project-2.png">
+                                <img src="./assets/images/project-2.png" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Gallery - 03  -->
+                    <div class="col-md-4">
+                        <div class="product-gallery-image">
+                            <a class="venobox" data-gall="gallery01" href="./assets/images/project-3.png">
+                                <img src="./assets/images/project-3.png" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./More Project Button -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="projects-more mt-5">
+                            <a href="https://projects-directory.netlify.app/" target="_blank" class="more-projects">More projects</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section End -->
+    <!-- My Skill Section Start -->
+    <section id="mySkill" class="skillMain py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title mySkill-title">My Skill</h2>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <!-- Skill one -->
+                <div class="col-md-3 text-center">
+                    <div class="mySkill-col sk-web">
+                        <div class="sk-icon">
+                            <img src="./assets/images/programing.svg" alt="web development; web design;" class="img-fluid">
+                        </div>
+                        <div class="skill-details">
+                            <h2 class="sk-title">Web Design and Development</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill two -->
+                <div class="col-md-3 text-center mt_50">
+                    <div class="mySkill-col sk-web">
+                        <div class="sk-icon">
+                            <img src="./assets/images/ui.svg" alt="web development; web design;" class="img-fluid">
+                        </div>
+                        <div class="skill-details">
+                            <h2 class="sk-title">UI/UX Research, Design, and Develop</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill three -->
+                <div class="col-md-3 text-center mt_50">
+                    <div class="mySkill-col sk-web">
+                        <div class="sk-icon">
+                            <img src="./assets/images/app_development.png" alt="web development; web design;" class="img-fluid">
+                        </div>
+                        <div class="skill-details">
+                            <h2 class="sk-title">Mobile App <br> and Development</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill Four -->
+                <div class="col-md-3 text-center mt_50">
+                    <div class="mySkill-col sk-web">
+                        <div class="sk-icon">
+                            <img src="./assets/images/digital-marketing.svg" alt="web development; web design;" class="img-fluid">
+                        </div>
+                        <div class="skill-details">
+                            <h2 class="sk-title">Full Stack Digital Marketing</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- My Skill Section End -->
+    <!-- Service Section Start -->
+    <section id="service" class="service-container">
+        <div class="container">
+            <!-- ./Service head -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-title my-service-title">My Services</h2>
+                </div>
+            </div>
+            <!-- ./Service Zone -->
+            <div class="row service-row">
+                <!-- ./Services Col-1 -->
+                <div class="col-md-3 mt_100">
+                    <div class="my-service">
+                        <div class="service-icon">
+                            <img src="./assets/images/web-design.png" alt="" class="img-fluid">
+                        </div>
+                        <h2 class="service-title">Web Design and Development</h2>
+                        <div class="my-service-list text-left">
+                            <ul class="my_service-lists">
+                                <li class="my_service_list_item">✅ Front End Design and Development </li>
+                                <li class="my_service_list_item">✅ WordPress Theme Customization</li>
+                                <li class="my_service_list_item">✅ WordPress Theme Customization with Custom Design</li>
+                                <li class="my_service_list_item">✅ WordPress Theme Customization with Elementor</li>
+                                <li class="my_service_list_item">✅ PSD to Wordpress</li>
+                                <li class="my_service_list_item">✅ PSD to Wordpress with Elementor</li>
+                                <li class="my_service_list_item">✅ Figma to Wordpress with Elementor</li>
+                                <li class="my_service_list_item">✅ XD to Wordpress with Elementor</li>
+                                <li class="my_service_list_item">✅ PDF to Wordpress with Elementor</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Services Col-2 -->
+                <div class="col-md-3 mt_100 service_card_margin_top">
+                    <div class="my-service">
+                        <div class="service-icon">
+                            <img src="./assets/images/wordpress.png" alt="" class="img-fluid">
+                        </div>
+                        <h2 class="service-title">UI/UX Design</h2>
+                        <div class="my-service-list text-left">
+                            <ul class="my_service-lists">
+                                <li class="my_service_list_item">✅ UI Design Research</li>
+                                <li class="my_service_list_item">✅ Tools We mainly use for Design: Adobe XD, Figma, Adobe Photoshop, Adobe Illustrator</li>
+                                <li class="my_service_list_item">✅ Web Application UI Design</li>
+                                <li class="my_service_list_item">✅ Website UI Design</li>
+                                <li class="my_service_list_item">✅ Mobile Application Design</li>
+                                <li class="my_service_list_item">✅ Desktop Appllication UI Design</li>
+                                <li class="my_service_list_item">✅ Wireframing</li>
+                                <li class="my_service_list_item">✅ Prototype</li>
+                                <li class="my_service_list_item">✅ User Flow</li>
+                                <li class="my_service_list_item">✅ User Experience Research</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Services Col-3 -->
+                <div class="col-md-3 mt_100 service_card_margin_top">
+                    <div class="my-service">
+                        <div class="service-icon">
+                            <img src="./assets/images/app-development.png" alt="" class="img-fluid">
+                        </div>
+                        <h2 class="service-title">Mobile App Development</h2>
+                        <div class="my-service-list text-left">
+                            <ul class="my_service-lists">
+                                <li class="my_service_list_item">✅ User App Research</li>
+                                <li class="my_service_list_item">✅ Native Application Development</li>
+                                <li class="my_service_list_item">✅ Cross Platform Application for IOS and Android</li>
+                                <li class="my_service_list_item">✅ One Single Codebase Code</li>
+                                <li class="my_service_list_item">✅ User Friendly User Interface</li>
+                                <li class="my_service_list_item">✅ Programming Language: Java, Kotlin, Dart, Swift</li>
+                                <li class="my_service_list_item">✅ Framework: Flutter, React Native</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Services Col-4 -->
+                <div class="col-md-3 mt_100 service_card_margin_top">
+                    <div class="my-service">
+                        <div class="service-icon">
+                            <img src="./assets/images/bullhorn.png" alt="" class="img-fluid">
+                        </div>
+                        <h2 class="service-title">Digital Marketing</h2>
+                        <div class="my-service-list text-left">
+                            <ul class="my_service-lists">
+                                <li class="my_service_list_item">✅ Social Media Marketing</li>
+                                <li class="my_service_list_item">✅ Search Engine Optimization</li>
+                                <li class="my_service_list_item">✅ Keyword Research</li>
+                                <li class="my_service_list_item">✅ On Page SEO</li>
+                                <li class="my_service_list_item">✅ Off Page SEO</li>
+                                <li class="my_service_list_item">✅ On Page Optimization</li>
+                                <li class="my_service_list_item">✅ Off Page Optimization</li>
+                                <li class="my_service_list_item">✅ Technical SEO</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service Section End -->
+    <!-- Service Product Slider Start -->
+    <section id="product">
+        <div class="product-main">
+            <div class="container">
+                <!-- Get My Services -->
+                <div class="row">
+                    <div class="col-md-12 py-5 mt-5 mb-5">
+                        <h2 class="section-title service-card-title">Get My Service</h2>
+                    </div>
+                </div>
+                <!-- Service Card -->
+                <div class="row product-slide">
+                    <!-- Product Card - 1 -->
+                    <div class="col-md-4 mt_100">
+                        <div class="product-card">
+                            <!-- Product Card Image -->
+                            <div class="product-image-slide">
+                                <div class="product-image">
+                                    <img src="./assets/images/product-card-slide-image.jpg" alt="product-card-slide-image" class="img-fluid">
+                                </div>
+                                <div class="product-image">
+                                    <img src="./assets/images/product-card-slide-image.jpg" alt="product-card-slide-image" class="img-fluid">
+                                </div>
+                                <div class="product-image">
+                                    <img src="./assets/images/product-card-slide-image.jpg" alt="product-card-slide-image" class="img-fluid">
+                                </div>
+                            </div>
+                            <!-- Product Details -->
+                            <div class="product-details">
+                                <div class="p-usr-info">
+                                    <ul>
+                                        <li class="p-usr-avtar">
+                                            <img src="./assets/images/us-avtr.png" alt="user avatar Image; Mahadi hassan small image; image size 24x24px;" class="img-fluid">
+                                        </li>
+                                        <li class="p-user">
+                                            <a href="#" class="p-user-name">mahadihassan</a>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="product-title">Web Design and Development</a>
+                                    <span class="product-ratings">
+                                        <ul>
+                                            <li class="pdct-rate"><i class="fas fa-star"></i></li>
+                                            <li class="pdct-rate"><i class="fas fa-star"></i></li>
+                                            <li class="pdct-rate"><i class="fas fa-star"></i></li>
+                                            <li class="pdct-rate"><i class="fas fa-star"></i></li>
+                                            <li class="pdct-rate"><i class="fas fa-star"></i></li>
+                                            <li class="pdct-rate"><span class="pdct-rate-number">(10)</span></li>
+                                    </ul>
+                                    </span>
+                                    <h3 class="product-price">150$</h3>
+                                    <div class="product-button">
+                                        <a href="https://www.fiverr.com/mahadihassan98/convert-your-psd-to-html-responsive-website" target="_blank" class="product-btns btn btn-info">Order Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card - 2 -->
+                    <div class="col-md-4 service_card_margin_top mt_100">
+                        <div class="product-card best-sell">
+                            <!-- Product Card Image -->
+                            <div class="product-image-slide">
+                                <div class="product-image">
+                                    <img src="./assets/images/product-card-slide-image.jpg" alt="product-card-slide-image" class="img-fluid">
+                                </div>
+                                <div class="product-image">
+                                    <img src="./assets/images/product-card-slide-image.jpg" alt="product-card-slide-image" class="img-fluid">
+                                </div>
+                                <div class="product-image">
+                                    <img src="./assets/images/product-card-slide-image.jpg" alt="product-card-slide-image" class="img-fluid">
+                                </div>
+                            </div>
+                            <!-- Product Details -->
+                            <div class="product-details">
+                                <div class="p-usr-info">
+                                    <ul>
+                                        <li class="p-usr-avtar">
+                                            <img src="./assets/images/us-avtr.png" alt="user avatar Image; Mahadi hassan small image; image size 24x24px;" class="img-fluid">
+                                        </li>
+                                        <li class="p-user">
+                                            <a href="#" class="p-user-name">mahadihassan</a>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="product-title">Web Design and Development</a>
+                                    <span class="product-ratings">
+                                        <ul>
+                                            <li class="pdct-rate"><i class="fas fa-star"></i></li>
+                                            <li class="pdct-rate"><i class="fas fa-star"></i></li>
+                                            <li class="pdct-rate"><i class="fas fa-star"></i></li>
+                                            <li class="pdct-rate"><i class="fas fa-star"></i></li>
+                                            <li class="pdct-rate"><i class="fas fa-star"></i></li>
+                                            <li class="pdct-rate"><span class="pdct-rate-number">(10)</span></li>
+                                    </ul>
+                                    </span>
+                                    <h3 class="product-price">150$</h3>
+                                    <div class="product-button">
+                                        <a href="https://www.fiverr.com/mahadihassan98/convert-your-psd-to-html-responsive-website" target="_blank" class="product-btns btn btn-info">Order Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card - 3 -->
+                    <div class="col-md-4 service_card_margin_top mt_100">
+                        <div class="product-card">
+                            <!-- Product Card Image -->
+                            <div class="product-image-slide">
+                                <div class="product-image">
+                                    <img src="./assets/images/product-card-slide-image.jpg" alt="product-card-slide-image" class="img-fluid">
+                                </div>
+                                <div class="product-image">
+                                    <img src="./assets/images/product-card-slide-image.jpg" alt="product-card-slide-image" class="img-fluid">
+                                </div>
+                                <div class="product-image">
+                                    <img src="./assets/images/product-card-slide-image.jpg" alt="product-card-slide-image" class="img-fluid">
+                                </div>
+                            </div>
+                            <!-- Product Details -->
+                            <div class="product-details">
+                                <div class="p-usr-info">
+                                    <ul>
+                                        <li class="p-usr-avtar">
+                                            <img src="./assets/images/us-avtr.png" alt="user avatar Image; Mahadi hassan small image; image size 24x24px;" class="img-fluid">
+                                        </li>
+                                        <li class="p-user">
+                                            <a href="#" class="p-user-name">mahadihassan</a>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="product-title">Web Design and Development</a>
+                                    <span class="product-ratings">
+                                        <ul>
+                                            <li class="pdct-rate"><i class="fas fa-star"></i></li>
+                                            <li class="pdct-rate"><i class="fas fa-star"></i></li>
+                                            <li class="pdct-rate"><i class="fas fa-star"></i></li>
+                                            <li class="pdct-rate"><i class="fas fa-star"></i></li>
+                                            <li class="pdct-rate"><i class="fas fa-star"></i></li>
+                                            <li class="pdct-rate"><span class="pdct-rate-number">(10)</span></li>
+                                    </ul>
+                                    </span>
+                                    <h3 class="product-price">150$</h3>
+                                    <div class="product-button">
+                                        <a href="#" target="_blank" class="product-btns btn btn-info">Order Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service Product Slider End -->
+    <!-- Market Place Where I work -->
+    <section id="market-place">
+        <div class="market-place-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="section-title markt-place">Marketplaces Where I work</h2>
+                    </div>
+                </div>
+                <!-- Marketplace Icons -->
+                <div class="row market-place-logo-row">
+                    <!-- Market Place logo -->
+                    <div class="col">
+                        <div class="market-place-logo">
+                            <a href="mailto:mahadihassan.mhd@gmail.com" class="mktp-logo text-right">
+                                <img src="./assets/images/upwork-1.png" alt="market place logo; fiverr; Upwork;" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Market Place logo -->
+                    <div class="col">
+                        <div class="market-place-logo">
+                            <a href="mailto:mahadihassan.mhd@gmail.com" class="mktp-logo text-left" target="_blank">
+                                <img src="./assets/images/fiverr.png" alt="market place logo; fiverr; Upwork;" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Market Place Where I work -->
+    <!-- Clients reviews Start -->
+    <section id="client_review" class="client_reviews_wrapper">
+        <div class="container">
+            <!-- section title -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section_main_title">
+                        <h2 class="section-title client_reviewTitle">What Clients says about me</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Client main review -->
+            <div class="row mt-5">
+                <!-- ./review - Clients details -->
+                <div class="col-md-6">
+                    <!-- ./clients Information -->
+                    <div class="clients_info">
+                        <h2 class="client_name">Segismundo Zamora Florez</h2>
+                        <p class="client_location"><i class="fas fa-map-marker-alt"></i> Hamburg, Germany</p>
+                        <p class="client_description">This is <b>Segismundo Zamora Florez</b> from Hamburg, Germany. We are working since 2020. I'm working with him as <b>Full Stack Web Developer</b> and <b>UI/UX Designer</b>. I have designed and developed many Projects of him. Last
+                            1year I have deisgned and developed his Business and It grown up in Hamburg, Germany. </p>
+                    </div>
+                </div>
+                <!-- ./Client Video Review -->
+                <div class="col-md-6">
+                    <div class="client_video_review">
+                        <img src="assets/images/review_video_thumbnail.png" class="img-fluid" alt="client review of mahadi hassan; mahedi hassan; aimsystech; Aim Sys Tech">
+                        <a class="venobox client_videoPlayback" data-autoplay="true" data-vbtype="video" href="https://youtu.be/QH-7pHhjvaM">
+                            <span class="video_playButton">
+                                <i class="fab fa-youtube"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Clients reviews End -->
+    <!-- Clients Testimonial Section Start -->
+    <section id="testimonial ">
+        <div class="testimonial-main ">
+            <div class="container ">
+                <!-- Testimonial Section Head -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="testimonial-head">
+                            <h2 class="section-title upwork_reviewTitle">More reviews From Upwork</h2>
+                        </div>
+                    </div>
+                </div>
+                <!--Testimonial Part -->
+                <div class="row testimonial-slider mt-5">
+                    <!-- Testimonial Slide - One -->
+                    <div class="col-md-12">
+                        <div class="testimonial-Slide">
+                            <img src="assets/images/review (1).png" class="img-fluid" alt="mahadi hassan; mahedi hassan; mhd; aimsystech; web developer; mahadi hassan upwork review; who is mahadi hassan; mrmhd;">
+                        </div>
+                    </div>
+                    <!-- Testimonial Slide - Two -->
+                    <div class="col-md-12">
+                        <div class="testimonial-Slide">
+                            <img src="assets/images/review (2).png" class="img-fluid" alt="mahadi hassan; mahedi hassan; mhd; aimsystech; web developer; mahadi hassan upwork review; who is mahadi hassan; mrmhd;">
+                        </div>
+                    </div>
+                    <!-- Testimonial Slide - Three -->
+                    <div class="col-md-12">
+                        <div class="testimonial-Slide">
+                            <img src="assets/images/review (3).png" class="img-fluid" alt="mahadi hassan; mahedi hassan; mhd; aimsystech; web developer; mahadi hassan upwork review; who is mahadi hassan; mrmhd;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Clients Testimonial Section End -->
+    <!-- Employment History Section Start -->
+    <section id="employment_history" class="employment_history_wrapper">
+        <div class="container">
+            <!-- ./Employment History Title -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="testimonial-head">
+                        <h2 class="section-title employment_Title">Employment History</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Employment History Columns -->
+            <div class="row mt-4">
+                <!-- Employment History Card - 1 -->
+                <div class="col-md-6">
+                    <div class="employment_history_card">
+                        <div class="eh_card_content">
+                            <span class="eh_time">Dec, 2019 - March, 2020</span>
+                            <h3 class="eh_job_title">Front End Developer</h3>
+                            <h4 class="eh_company_name">Eurosia Technology | Dhaka Bangladesh</h4>
+                            <p class="eh_job_description">Here I have worked as Front End Developer. And Developed Applications from Front end. During this Time I have learn Back End Development and Developed those Front Designs into Back End. I have Lost this Job During COVID Pandamic.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Employment History Card - 2 -->
+                <div class="col-md-6">
+                    <div class="employment_history_card">
+                        <div class="eh_card_content">
+                            <span class="eh_time">March, 2020 - May, 2020</span>
+                            <h3 class="eh_job_title">Full Stack Developer</h3>
+                            <h4 class="eh_company_name"> Geer Ltd | Saudi Arabia </h4>
+                            <p class="eh_job_description">Geer Ltd Saudi Arbaian Security Survalliance Compnay. I have worked as Full Stack Developer remotely. During this Time I have Developed their Web Applications. During This Time I also learnt UI/UX Design, Application. Although
+                                I have worked 2.5 months here. But during this time I have Learn lot of things. </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Employment History Card - 3 -->
+                <div class="col-md-6">
+                    <div class="employment_history_card">
+                        <div class="eh_card_content">
+                            <span class="eh_time">May, 2020 - Dec, 2020</span>
+                            <h3 class="eh_job_title">Web Developer Trainer</h3>
+                            <h4 class="eh_company_name">Trendup IT Institute | Dhaka Bangladesh</h4>
+                            <p class="eh_job_description">Trend Up IT Institute is Professional Training Institute in Dhaka. Here my main duty was to Train Students. I have trained my Students from scratch and they are working on freelance market places. Even They are earning from
+                                Market Places.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Employment History Card - 4 -->
+                <div class="col-md-6">
+                    <div class="employment_history_card">
+                        <div class="eh_card_content">
+                            <span class="eh_time">June, 2019 - December, 2020</span>
+                            <h3 class="eh_job_title">LEDP(Learning and Earning Development Project) | Dhaka Bangladesh</h3>
+                            <h4 class="eh_company_name">ICT Division, Ministry Of Bangladesh</h4>
+                            <p class="eh_job_description">LEDP(Learning and Development Project) this is Government Project to Train and Develop People and Train Professionally. Here I have train Students Web Design and Development. And I have trained and Developed Students.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Employment History Section End -->
+    <!-- Courses and Certification Section Start -->
+    <section id="course_certificate" class="course_certificate_wrapper">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row">
+                <div class="certificate_title">
+                    <h2 class="section-title certificate_Title">Courses and Certificates I have Completed</h2>
+                </div>
+            </div>
+            <!-- Certificate Slider -->
+            <div class="certificate_showcase mt-5">
+                <div class="row">
+                    <!-- Courses Card -1 -->
+                    <div class="col-md-6">
+                        <div class="certicate_card">
+                            <div class="certificate_content">
+                                <span class="certicate_duration_and_issue_date">May 10, 2019 - Dec 10, 2019 | 6 Month Course</span>
+                                <h3 class="course_name"> Full Stack Web Design and Development</h3>
+                                <h4 class="course_institue"> <span class="gotTrain_from">from</span> Creative IT Institute | <i class="fad fa-map-marker-alt"></i> Dhaka Bangladesh</h4>
+                                <p class="course_details">This is Scholarship Program. I got this by wining Scholarchip. And this Scholarchip change my way. During this time Got Job in Eurosia and Started job and Completed my course. I have learnt many things and Completed My
+                                    Course Successfully.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Courses Card -2 -->
+                    <div class="col-md-6">
+                        <div class="certicate_card">
+                            <div class="certificate_content">
+                                <span class="certicate_duration_and_issue_date">Jun 20, 2019 - Aug 10, 2019</span>
+                                <h3 class="course_name"> Full Stack Web Design and Development</h3>
+                                <h4 class="course_institue"> <span class="gotTrain_from">from</span> Udemy | <i class="fad fa-map-marker-alt"></i> Online</h4>
+                                <p class="course_details">I have Completed this Course with PHP WordPress and Laravel. Not only this I have Learn React and NodeJs. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Courses Card -3 -->
+                    <div class="col-md-6">
+                        <div class="certicate_card">
+                            <div class="certificate_content">
+                                <span class="certicate_duration_and_issue_date">Aug 10, 2019 - Nov 15, 2019</span>
+                                <h3 class="course_name"> Full Stack Digital Marketing</h3>
+                                <h4 class="course_institue"> <span class="gotTrain_from">from</span> Udemy | <i class="fad fa-map-marker-alt"></i> Online</h4>
+                                <p class="course_details">I have Learn Full Stack Digital Marketing and I have Full SEO, SMM, and All items in Digital Marketing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Courses Card -4 -->
+                    <div class="col-md-6">
+                        <div class="certicate_card">
+                            <div class="certificate_content">
+                                <span class="certicate_duration_and_issue_date">May 10, 2019 - Dec 10, 2019 | 6 Month Course</span>
+                                <h3 class="course_name"> UI/UX Design</h3>
+                                <h4 class="course_institue"> <span class="gotTrain_from">from</span> Udemy | <i class="fad fa-map-marker-alt"></i> Online</h4>
+                                <p class="course_details">I have learn UI/UX Design. With Professionally. I have Learn UI/UX design with Adobe XD and Figma. Not only this I have Adobe Photoshop Experience, Adobe Illustrator Experience, and I have learn Graphics Design Professionally.
+                                    And I have done many projects on Upwork.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Courses and Certification Section End -->
+    <!-- Contact Me Section Start -->
+    <section id="contact" class="contact-me py-5">
+        <div class="container">
+            <div class="row">
+                <!-- discuss for projects -->
+                <div class="col-md-12">
+                    <div class="project_discuss text-center">
+                        <h3 class="project_discuss">Worried about your Business? Knock me right Now without any kind of Hesitation</h3>
+                        <h4 class="project_discuss_short_message">Looking forward to hearing from you.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Me Section End -->
+    <!-- Foooter Section Start -->
+    <footer id="footer" class="footer_main py-5">
+        <div class="footer_wrapper py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer left column -->
+                    <div class="col-md-4">
+                        <div class="footer_develop">
+                            <p class="footer_develope_text root_font">Design and Developed by Mahadi Hassan </p>
+                        </div>
+                    </div>
+                    <!-- Footer Middle column -->
+                    <div class="col-md-4">
+                        <div class="footer_copyright text-center">
+                            <p class="copyright root_font">All Rights are Reserved &copy;</p>
+                        </div>
+                    </div>
+                    <!-- Footer Right Column -->
+                    <div class="col-md-4">
+                        <div class="footer_socialmedia">
+                            <ul class="socialmedia_block">
+                                <!-- ./Facebook -->
+                                <li class="socialmedida_items">
+                                    <a href="https://www.facebook.com/mahadihassan.mhd/" class="socialmedia_item">
+                                        <i class="fab fa-facebook-square facebook"></i>
+                                    </a>
+                                </li>
+                                <!-- ./linkedin -->
+                                <li class="socialmedida_items">
+                                    <a href="https://www.linkedin.com/in/mr-mahadihassan" class="socialmedia_item">
+                                        <i class="fab fa-linkedin linkedin"></i>
+                                    </a>
+                                </li>
+                                <!-- ./dribbble -->
+                                <li class="socialmedida_items">
+                                    <a href="https://dribbble.com/mahadihassan_mhd" class="socialmedia_item">
+                                        <i class="fab fa-dribbble-square dribbble"></i>
+                                    </a>
+                                </li>
+                                <!-- ./behance -->
+                                <li class="socialmedida_items">
+                                    <a href="https://www.behance.net/mahadihassan_mhd" class="socialmedia_item">
+                                        <i class="fab fa-behance-square behance"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Foooter Section End -->
 
 
-   <!-- Messenger Chat Plugin Code -->
-   <div id="fb-root"></div>
-
-   <!-- Your Chat Plugin code -->
-   <div id="fb-customer-chat" class="fb-customerchat">
-   </div>
-
-   <script>
-     var chatbox = document.getElementById('fb-customer-chat');
-     chatbox.setAttribute("page_id", "630000617640952");
-     chatbox.setAttribute("attribution", "setup_tool");
-
-     window.fbAsyncInit = function() {
-       FB.init({
-         xfbml            : true,
-         version          : 'v11.0'
-       });
-     };
-
-     (function(d, s, id) {
-       var js, fjs = d.getElementsByTagName(s)[0];
-       if (d.getElementById(id)) return;
-       js = d.createElement(s); js.id = id;
-       js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-       fjs.parentNode.insertBefore(js, fjs);
-     }(document, 'script', 'facebook-jssdk'));
-   </script>
-
-    <!-- All Javascript Files are Here -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <!-- Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-migrate@1.2.1/dist/jquery-migrate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/fontawesome.min.js"></script>
-    <script src="./6332f77505.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.3/venobox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="assets/js/6332f77505.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Venobox load
+        $(document).ready(function() {
+            $('.venobox').venobox();
+        });
+        // TypedJs For My job Description
+        var typed = new Typed('.my-services', {
+            strings: ['Full Stack Web Developer.', 'Expert at Front End Development.', 'Expert at WordPress Theme Customization.', 'Expert at WordPress Theme Development.'],
+            stringsElement: null,
+            typeSpeed: 60,
+            startDelay: 20,
+            backSpeed: 70,
+            backDelay: 900,
+            smartBackspace: true,
+            shuffle: false,
+            loop: true,
+            loopCount: Infinity,
+        })
+    </script>
 </body>
 
 </html>

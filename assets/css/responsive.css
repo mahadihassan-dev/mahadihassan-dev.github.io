@@ -1,0 +1,544 @@
+/* 
+    Theme responsive
+*/
+
+@media only screen and (min-width: 320px) and (max-width:360px) {
+    .whatsapp_chat {
+        width: 30px;
+        height: 30px;
+        bottom: 150px;
+    }
+    .whatsapp_chat i {
+        font-size: 36px;
+    }
+    .skype_chat {
+        bottom: 195px;
+        left: 285px;
+    }
+    .skype_chat i {
+        font-size: 36px;
+    }
+    /* Menu CSS Start */
+    .menu {
+        padding: 2rem;
+        background-color: #fff;
+        position: relative;
+        width: calc(0px + 4 * 70px + 4rem);
+        display: flex;
+        justify-content: center;
+        border-radius: 20px 20px;
+        box-shadow: 0 10px 25px 0 rgb(0 0 0 / 8%);
+    }
+    .link {
+        width: 75px;
+        height: 25px;
+    }
+    .link-title {
+        display: none;
+    }
+    .link:before {
+        display: none;
+    }
+    .link:hover,
+    .link:focus {
+        outline: 0;
+        width: 75px;
+        text-decoration: none;
+    }
+    /* Menu CSS End */
+    .mySkill-col {
+        width: 330px;
+    }
+    .my-service {
+        width: 325px;
+    }
+    .certificate_content::after {
+        display: none;
+    }
+    .markt-place::after,
+    .projet-title::after,
+    .mySkill-title::after,
+    .about_me_title::after,
+    .employment_Title::after,
+    .my-service-title::after,
+    .certificate_Title::after,
+    .client_reviewTitle::after,
+    .upwork_reviewTitle::after,
+    .service-card-title::after {
+        display: none;
+    }
+    .video_playButton {
+        margin: 79px 0px;
+        display: block;
+    }
+    .mt_50 {
+        margin-top: 50px;
+    }
+    .mt_100 {
+        margin-top: 100px;
+    }
+    .intro-btn ul li a {
+        display: block;
+        width: 125px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        background: #111;
+        font-family: 'Ubuntu Mono';
+        font-size: 15px;
+    }
+    /* Section Title */
+    .section-title {
+        font-size: 22px;
+    }
+    /* about me */
+    .about_me_title::after {
+        left: 100px;
+        top: 15px;
+    }
+    .projet-title::after {
+        left: 231px;
+        top: 15px;
+    }
+    .mySkill-col {
+        width: 320px;
+        margin-top: 30px;
+    }
+    .service_card_margin_top {
+        margin-top: 100px;
+    }
+    h2.section-title.markt-place::after {
+        left: 285px;
+        top: 13px;
+    }
+    .client_reviewTitle::after {
+        left: 295px;
+        top: 15px;
+    }
+    .upwork_reviewTitle::after {
+        left: 275px;
+        top: 13px;
+    }
+    .employment_Title::after {
+        left: 205px;
+        top: 15px;
+    }
+    .eh_job_title {
+        font-family: 'IBM Plex Mono';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+    }
+    .eh_company_name {
+        font-family: 'Ubuntu Mono';
+        font-size: 22px;
+        font-weight: 500;
+        font-style: normal;
+    }
+    .employment_history_card::before {
+        position: absolute;
+        bottom: 45px;
+        left: 45px;
+        content: '';
+        height: 255px;
+        width: 1px;
+        background: #000;
+    }
+    .certificate_Title::after {
+        left: 105px;
+        top: 40px;
+    }
+    .course_name {
+        font-size: 20px;
+    }
+    .course_institue {
+        font-family: 'Ubuntu Mono';
+        font-size: 18px;
+        font-style: inherit;
+        font-weight: 500;
+    }
+    .certicate_card::before {
+        position: absolute;
+        content: '';
+        bottom: 36px;
+        left: 25px;
+        width: 1px;
+        height: 355px;
+        background: #000;
+    }
+    .certificate_content::after {
+        position: absolute;
+        content: '\f5ea';
+        top: 17px;
+        right: -15px;
+        font-size: 26px;
+        font-family: 'Font Awesome 5 Pro';
+    }
+    .project_discuss {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 19px;
+    }
+    .project_discuss_short_message {
+        font-size: 18px;
+    }
+    .root_font {
+        font-family: 'IBM Plex Mono';
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .root_font {
+        font-family: 'IBM Plex Mono';
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .footer_socialmedia {
+        text-align: center !important;
+    }
+    .welcome {
+        font-size: 26px;
+    }
+    .job-title {
+        font-size: 22px;
+    }
+    .profile-picture::after {
+        position: absolute;
+        content: '';
+        bottom: 12px;
+        right: 49px;
+        width: 55px;
+        height: 55px;
+        background-color: #6FDA44;
+        border: 10px solid #fff;
+        border-radius: 50%;
+    }
+    .my-service-list ul li {
+        font-size: 14px;
+    }
+    /* Footer Section Start */
+    .footer_wrapper {
+        margin-bottom: 65px;
+    }
+    .socialmedia_item i {
+        font-size: 32px;
+    }
+    /* Footer Section End */
+}
+
+@media only screen and (min-width: 361px) and (max-width: 375px) {
+    .whatsapp_chat {
+        width: 30px;
+        height: 30px;
+    }
+    .whatsapp_chat i {
+        font-size: 36px;
+    }
+    a.skype_chat {
+        width: 30px;
+        height: 30px;
+        bottom: 80px;
+        left: 425px;
+    }
+    .skype_chat i {
+        font-size: 36px;
+    }
+    /* Menu CSS Start */
+    .menu {
+        padding: 2rem;
+        background-color: #fff;
+        position: relative;
+        width: calc(0px + 4 * 70px + 4rem);
+        display: flex;
+        justify-content: center;
+        border-radius: 20px 20px;
+        box-shadow: 0 10px 25px 0 rgb(0 0 0 / 8%);
+    }
+    .link {
+        width: 75px;
+        height: 25px;
+    }
+    .link-title {
+        display: none;
+    }
+    .link:before {
+        display: none;
+    }
+    .link:hover,
+    .link:focus {
+        outline: 0;
+        width: 75px;
+        text-decoration: none;
+    }
+    /* Menu CSS End */
+    /* My Information Button */
+    .intro-btn ul li a {
+        display: block;
+        width: 125px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        background: #111;
+        font-family: 'Ubuntu Mono';
+        font-size: 15px;
+    }
+    /* Section Title */
+    .section-title {
+        font-size: 22px;
+    }
+    /* about me */
+    .about_me_title::after {
+        left: 100px;
+        top: 15px;
+    }
+    .projet-title::after {
+        left: 231px;
+        top: 15px;
+    }
+    .mySkill-col {
+        width: 320px;
+        margin-top: 30px;
+    }
+    .service_card_margin_top {
+        margin-top: 100px;
+    }
+    h2.section-title.markt-place::after {
+        left: 285px;
+        top: 13px;
+    }
+    .client_reviewTitle::after {
+        left: 295px;
+        top: 15px;
+    }
+    .upwork_reviewTitle::after {
+        left: 275px;
+        top: 13px;
+    }
+    .employment_Title::after {
+        left: 205px;
+        top: 15px;
+    }
+    .eh_job_title {
+        font-family: 'IBM Plex Mono';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+    }
+    .eh_company_name {
+        font-family: 'Ubuntu Mono';
+        font-size: 22px;
+        font-weight: 500;
+        font-style: normal;
+    }
+    .employment_history_card::before {
+        position: absolute;
+        bottom: 45px;
+        left: 45px;
+        content: '';
+        height: 255px;
+        width: 1px;
+        background: #000;
+    }
+    .certificate_Title::after {
+        left: 105px;
+        top: 40px;
+    }
+    .course_name {
+        font-size: 20px;
+    }
+    .course_institue {
+        font-family: 'Ubuntu Mono';
+        font-size: 18px;
+        font-style: inherit;
+        font-weight: 500;
+    }
+    .certicate_card::before {
+        position: absolute;
+        content: '';
+        bottom: 36px;
+        left: 25px;
+        width: 1px;
+        height: 355px;
+        background: #000;
+    }
+    .certificate_content::after {
+        position: absolute;
+        content: '\f5ea';
+        top: 17px;
+        right: -15px;
+        font-size: 26px;
+        font-family: 'Font Awesome 5 Pro';
+    }
+    .project_discuss {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 20px;
+    }
+    .project_discuss_short_message {
+        font-size: 18px;
+    }
+    .root_font {
+        font-family: 'IBM Plex Mono';
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .root_font {
+        font-family: 'IBM Plex Mono';
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .footer_socialmedia {
+        text-align: center !important;
+    }
+    .welcome {
+        font-size: 26px;
+    }
+    .job-title {
+        font-size: 22px;
+    }
+    .profile-picture::after {
+        position: absolute;
+        content: '';
+        bottom: 12px;
+        right: 49px;
+        width: 55px;
+        height: 55px;
+        background-color: #6FDA44;
+        border: 10px solid #fff;
+        border-radius: 50%;
+    }
+    .certificate_content::after {
+        display: none;
+    }
+    .markt-place::after,
+    .projet-title::after,
+    .mySkill-title::after,
+    .about_me_title::after,
+    .employment_Title::after,
+    .my-service-title::after,
+    .certificate_Title::after,
+    .client_reviewTitle::after,
+    .upwork_reviewTitle::after,
+    .service-card-title::after {
+        display: none;
+    }
+    .video_playButton {
+        margin: 79px 0px;
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 480px) {
+    .whatsapp_chat {
+        width: 30px;
+        height: 30px;
+    }
+    .whatsapp_chat i {
+        font-size: 36px;
+    }
+    a.skype_chat {
+        width: 30px;
+        height: 30px;
+        bottom: 80px;
+        left: 425px;
+    }
+    .skype_chat i {
+        font-size: 36px;
+    }
+    /* Menu CSS Start */
+    .menu {
+        padding: 2rem;
+        background-color: #fff;
+        position: relative;
+        width: calc(0px + 4 * 70px + 4rem);
+        display: flex;
+        justify-content: center;
+        border-radius: 20px 20px;
+        box-shadow: 0 10px 25px 0 rgb(0 0 0 / 8%);
+    }
+    .link {
+        width: 75px;
+        height: 25px;
+    }
+    .link-title {
+        display: none;
+    }
+    .link:before {
+        display: none;
+    }
+    .link:hover,
+    .link:focus {
+        outline: 0;
+        width: 75px;
+        text-decoration: none;
+    }
+    /* Menu CSS End */
+    .intro-btn ul li a {
+        display: block;
+        width: 125px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        background: #111;
+        font-family: 'Ubuntu Mono';
+        font-size: 15px;
+    }
+    .mt_50 {
+        margin-top: 50px;
+    }
+    .mt_100 {
+        margin-top: 100px;
+    }
+    .markt-place::after,
+    .projet-title::after,
+    .mySkill-title::after,
+    .about_me_title::after,
+    .employment_Title::after,
+    .my-service-title::after,
+    .certificate_Title::after,
+    .client_reviewTitle::after,
+    .upwork_reviewTitle::after,
+    .service-card-title::after {
+        display: none;
+    }
+    .mySkill-col {
+        width: 347px;
+        background: #eaeaea47;
+        margin: auto;
+        padding: 25px 10px;
+        border-radius: 10px;
+        border: 0.5px solid rgb(0 0 0 / 8%);
+        transition: all cubic-bezier(0.4, 0, 1, 1) .2s;
+        box-shadow: 0px 5px 2px 0px rgb(0 0 0 / 19%);
+    }
+    .project_discuss {
+        font-size: 22px;
+    }
+    .project_discuss_short_message {
+        font-size: 18px;
+    }
+    .footer_develop {
+        text-align: center;
+    }
+    .footer_socialmedia {
+        text-align: center !important;
+    }
+    .intro-btn ul li a {
+        display: block;
+        width: 155px;
+        font-size: 20px;
+        color: #fff;
+        border-radius: 10 px;
+        transition: all linear .5s;
+    }
+    .video_playButton {
+        margin: 93px 0px;
+        display: block;
+    }
+    .certificate_content::after {
+        display: none;
+    }
+    .welcome {
+        font-size: 26px;
+    }
+    .job-title {
+        font-size: 22px;
+    }
+}
