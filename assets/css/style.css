@@ -788,6 +788,32 @@ li.ce-title h2 {
     font-size: 32px;
 }
 
+.letsChatBtn {
+    background: #0781fe;
+    background: -webkit-linear-gradient(97.44deg, #0781FE 0%, #6972EA 100%) !important;
+    background: linear-gradient(97.44deg, #0781FE 0%, #6972EA 100%) !important;
+    color: #fff;
+    display: block;
+    width: 350px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 10px;
+    font-size: 22px;
+    margin: auto;
+    margin-top: 35px;
+    text-decoration: none;
+    transition: all linear .5s;
+}
+
+.letsChatBtn:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #0781fe;
+    background: -webkit-linear-gradient(-97.44deg, #0781FE 0%, #6972EA 100%) !important;
+    background: linear-gradient(-97.44deg, #0781FE 0%, #6972EA 100%) !important;
+    transition: all linear .5s;
+}
+
 
 /* Contact Me Section End */
 
